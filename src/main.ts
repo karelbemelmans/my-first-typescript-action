@@ -9,13 +9,13 @@ export async function run(): Promise<void> {
   try {
     const taskDefPath: string = core.getInput('task-definition')
     const otelContainerDef = {
-      'containerDefinitions': [
+      containerDefinitions: [
         {
-          'name': 'otel-collector',
-          'image': 'otel/opentelemetry-collector:0.33.0',
-          'cpu': 0,
-          'memory': 0,
-          'essential': true
+          name: 'otel-collector',
+          image: 'otel/opentelemetry-collector:0.33.0',
+          cpu: 0,
+          memory: 0,
+          essential: true
         }
       ]
     }
