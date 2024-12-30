@@ -9,15 +9,15 @@ branding:
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  task-definition:
+    description: 'Task definition'
     required: true
-    default: '1000'
+    default: 'task-definition.json'
 
 # Define your outputs here.
 outputs:
-  time:
-    description: 'Your output description here'
+  task-definition:
+    description: 'The modified task definition'
 
 runs:
   using: node20
